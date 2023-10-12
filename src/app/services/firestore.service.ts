@@ -25,6 +25,7 @@ export class FirestoreService {
         text: doc.data()['text'],
         url: doc.data()['url'],
         author: doc.data()['author'],
+        authorName: doc.data()['authorName'],
         creationTime: doc.data()['creationTime'].toDate(),
       }
     }));

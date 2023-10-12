@@ -18,7 +18,7 @@ export class AuthService {
     this.auth = getAuth(fireApp.app);
 
     onAuthStateChanged(this.auth, (user) => {
-      console.log('autenticazione cambiata')
+      console.log('autenticazione cambiata', this.firebaseUser)
       if (user) {
         const uid = user.uid;
         this.firebaseUser.next(user);

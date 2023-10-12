@@ -18,10 +18,10 @@ export class HomeComponent implements OnInit{
 
   ngOnInit(): void {
     this.firestore.getCwits()
-    // .then(data => {
-    //   console.log(data)
-    //   this.cwits = data as Cwit[]
-    // })
+    .then(data => {
+      console.log(data)
+      this.cwits = data as Cwit[]
+    })
   }
 
 }
