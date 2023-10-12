@@ -12,4 +12,6 @@ export class FireappService {
   constructor() {
     this.app = initializeApp(firebaseConfig);
   }
+
+
 }
