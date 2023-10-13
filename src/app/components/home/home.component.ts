@@ -22,6 +22,24 @@ export class HomeComponent implements OnInit{
       console.log(data)
       this.cwits = data as Cwit[]
     })
+
+    // const text = 'ciao a tutti gli amici del club di #deltaplano di #genova';
+    // const url = 'http://deltaplano-genova.org';
+
+    // const newCwit = {
+    //   text: text,
+    //   url: url,
+    //   author: firebaseUser.uid,
+    //   authorName: ourUser.username,
+    //   creationTime: new Date(),
+    //   tags: this.parseForTags(text)
+    // }
   }
+
+  // parseForTags(text: string){  //per eseguire una ricerca su firebase senza usare plugin
+  //   const splitted = text.split(' ');
+  //   const tags = splitted.filter(string => string[0] === '#')
+  //   return tags;
+  // }
 
 }

@@ -1,9 +1,11 @@
 <header>
   <span>cwitter</span>
+
   <div>
     <div *ngIf="user">
       <button (click)="logout()">logout</button>
       <button routerLink="/user">Profilo</button>
+      <button routerLink="/user-cwit">My new Cwit</button>
     </div>
 
     <div *ngIf="!user">

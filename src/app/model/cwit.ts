@@ -3,5 +3,6 @@ export interface Cwit {
   url: string,
   author: string,
   creationTime: Date,
-  authorName: string
+  authorName: string,
+  tags?: string[]
 }
